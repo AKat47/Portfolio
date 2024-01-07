@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // React bootstrap component for the NavBar
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { NavLink } from 'react-router-dom';
 // Style the NavBar component
 import './NavBar.css';
 
@@ -48,15 +49,6 @@ function NavBar() {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("home")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
                 href="#projects"
                 className={
                   activeLink === "projects"
@@ -66,20 +58,29 @@ function NavBar() {
                 onClick={() => onUpdateActiveLink("home")}
               >
                 Projects
-              </Nav.Link>
+              </Nav.Link>              
+              <NavLink to="/gallery"
+              href="#gallery"
+              className={
+                activeLink === "gallery" ?
+                 "active navbar-link" : 
+                 "navbar-link"}
+              onClick={() => onUpdateActiveLink("gallery")}>
+                  Gallery
+              </NavLink>
             </Nav>
             <span className="navbar-text">
               <span className="social-icons">
                 {/* Github */}
-                <a href="https://github.com/aliakbarzohour">
+                <a href="https://x.com/_dilorex?t=9uqcgiBq5lU9s_M-IekABQ&s=08">
                   <i class="bi bi-github"></i>
                 </a>
                 {/* LinkedIn */}
-                <a href="https://linkedin.com/in/aliakbarzohour">
+                <a href="mgraquza@gmail.com">
                   <i class="bi bi-linkedin"></i>
                 </a>
                 {/* Instagram */}
-                <a href="https://instagram.com/ali.akbarzohour">
+                <a href="https://www.instagram.com/_dilorex?igsh=MTJhYmNtZmFqbHd2dw==">
                   <i class="bi bi-instagram"></i>
                 </a>
               </span>

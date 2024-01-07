@@ -53,10 +53,7 @@ function Skills() {
                 <h2>Skills</h2>
                 {/* Skills Description */}
                 <p>
-                  I have a passion for learning new things and I am always
-                  looking for new ways to improve my skills. <br /> I have a
-                  strong background in web development and I am always looking
-                  to learn new things and improve my skills.
+                  I do many sketchworks. My forte are animations,traditional sketch and digital art
                 </p>
                 {/* Skills Carousel */}
                 <Carousel

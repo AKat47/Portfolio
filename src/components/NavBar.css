@@ -1,10 +1,10 @@
 nav.navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     padding: 10px 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 10;
     transition: ease-in-out .4s;
     -webkit-transition: ease-in-out .4s;
     -moz-transition: ease-in-out .4s;
@@ -30,6 +30,16 @@ nav.navbar.scrolled {
     padding: 0 25px;
     font-size: 18px;
 }
+
+.navbar-link, .navbar-nav .nav-link {
+    text-decoration: none; 
+    color: inherit; 
+    color: #ffffff !important;
+    font-weight: 400;
+    letter-spacing: .8px;
+    padding: 0 25px;
+    font-size: 18px;       
+  }
 
 .scrolled .nav-link.navbar-link,
 .navbar-brand {

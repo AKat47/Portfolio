@@ -2,15 +2,21 @@ import React from "react";
 // Syles
 import "./Projects.css";
 // Project Image
-import img1 from "../assets/image/project-img1.png";
-import img2 from "../assets/image/project-img2.png";
-import img3 from "../assets/image/project-img3.png";
+import img1 from "../assets/image/anime1.jpg";
+import img2 from "../assets/image/anime2.jpg";
+import img3 from "../assets/image/anime3.jpg";
+import img4 from "../assets/image/anime4.jpg";
+import img5 from "../assets/image/anime5.jpg";
+import img6 from "../assets/image/anime6.jpg";
+import img7 from "../assets/image/anime7.jpg";
+import img8 from "../assets/image/anime8.jpg";
+import img9 from "../assets/image/anime9.jpg";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import ProjectsCard from "./ProjectsCard";
 import colorSharp from "../assets/image/color-sharp2.png";
 
 function Projects() {
-  const projects = [
+  const anime = [
     {
       title: "Portfolio",
       description: "This is my portfolio website",
@@ -25,22 +31,43 @@ function Projects() {
       title: "Portfolio",
       description: "This is my portfolio website",
       img: img3,
+    }
+  ];
+
+  const sketches = [
+    {
+      title: "Portfolio",
+      description: "This is my portfolio website",
+      img: img4,
+    },    
+    {
+      title: "Portfolio",
+      description: "This is my portfolio website",
+      img: img6,
     },
     {
       title: "Portfolio",
       description: "This is my portfolio website",
-      img: img1,
+      img: img5,
+    }
+  ];
+
+  const digital = [
+    {
+      title: "Portfolio",
+      description: "This is my portfolio website",
+      img: img7,
+    },  
+    {
+      title: "Portfolio",
+      description: "This is my portfolio website",
+      img: img9,
     },
     {
       title: "Portfolio",
       description: "This is my portfolio website",
-      img: img2,
-    },
-    {
-      title: "Portfolio",
-      description: "This is my portfolio website",
-      img: img3,
-    },
+      img: img8,
+    }
   ];
 
   // Return JSX
@@ -57,24 +84,37 @@ function Projects() {
             <Tab.Container defaultActiveKey="first" id="projects-tabs">
               <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">Anime</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Second</Nav.Link>
+                  <Nav.Link eventKey="second">Sketches</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tap Third</Nav.Link>
+                  <Nav.Link eventKey="third">Digital Rendering</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => {
+                    {anime.map((project, index) => {
                       return <ProjectsCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second"></Tab.Pane>
+                <Tab.Pane eventKey="second">
+                <Row>
+                    {sketches.map((project, index) => {
+                      return <ProjectsCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                <Row>
+                    {digital.map((project, index) => {
+                      return <ProjectsCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

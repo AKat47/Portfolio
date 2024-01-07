@@ -10,15 +10,21 @@ import NavBar from './components/NavBar';
 import Skills from './components/Skills';
 // Projects Component
 import Projects from './components/Projects';
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import Gallery from './components/Gallery';
+
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <NavBar/>
-      <HeroSection/>
-      <Skills/>
-      <Projects/>
+      <Routes>
+        <Route path="/" element={<><HeroSection/><Projects/></>} />
+        <Route path="/gallery" element={<Gallery/>} />
+      </Routes>
     </div>
+  </Router>
   );
 }
 

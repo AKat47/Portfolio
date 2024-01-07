@@ -15,7 +15,7 @@ function HeroSection() {
   // Define the state for the deleting text
   const [deleting, setDeleting] = useState(false);
   // Define to rotate the text
-  const toRotate = ["Web Developer", "Front-End Teacher", "DevOps Engineer"];
+  const toRotate = ["This is the world of my Artwork"];
   // Define the state for the replaced text
   const [Text, setText] = useState("");
   // Make delte the text
@@ -70,20 +70,18 @@ function HeroSection() {
           <Row>
             {/* Col */}
             <Col xs={12} md={6} xl={7}>
-              <span className="tagline">Welcome To My Portfolio</span>
+              <span className="tagline">Welcome To My ArtBook</span>
               <h1>
                 {/* My Name */}
-                {`Hi Im Aliakbar Zohour`}
+                {`Hi, Im Vyas`}
                 <br />
                 {/* Typed Effect */}
                 <span className="wrap">{Text}</span>
               </h1>
               {/* Description */}
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
-                repellendus esse voluptatem nobis iste totam! Quia sed,
-                voluptatum ea excepturi alias possimus dolore adipisci omnis
-                corporis ullam beatae maiores totam.
+                I'm a 16year old and I grew up fascinated by the animation industry
+                As I grew watching the animations, I got more interested in conceptualizing
               </p>
               <button
                 onClick={() => {

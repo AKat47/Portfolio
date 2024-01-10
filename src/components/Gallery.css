@@ -1,5 +1,5 @@
 .slider-container {
-    width: 300px; /* Width of your slider */
-    height: 300px;
-    margin: auto; /* Centers horizontally if not using flexbox */
-  }
+  width: 500px; /* Width of your slider */
+  height: 500px;
+  margin: auto; /* Centers horizontally if not using flexbox */
+}
